@@ -88,11 +88,11 @@ class ModelGenerator extends MineGenerator implements CodeGenerator
         ];
 
         if (! Str::contains($this->tablesContract->getTableName(), Str::lower($this->tablesContract->getModuleName()))) {
-            throw new NormalStatusException(t('setting.gen_model_error'), 500);
+//            throw new NormalStatusException(t('setting.gen_model_error'), 500);
         }
 
         if (mb_strlen($this->tablesContract->getTableName()) === mb_strlen($this->tablesContract->getModuleName())) {
-            throw new NormalStatusException(t('setting.gen_model_error'), 500);
+//            throw new NormalStatusException(t('setting.gen_model_error'), 500);
         }
 
         $input = new ArrayInput($command);
