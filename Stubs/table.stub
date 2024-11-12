@@ -14,7 +14,7 @@ use Hyperf\Database\Schema\Schema;
 use Hyperf\Database\Schema\Blueprint;
 use Hyperf\Database\Migrations\Migration;
 
-class Create{CLASS_NAME}Table extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -36,4 +36,4 @@ class Create{CLASS_NAME}Table extends Migration
     {
         Schema::dropIfExists('DummyTable');
     }
-}
+};
